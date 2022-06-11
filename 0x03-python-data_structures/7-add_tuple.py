@@ -20,5 +20,5 @@ def add_tuple(tuple_a=(), tuple_b=()):
     else:
         b1 = tuple_b[0]
         b2 = tuple_b[1]
-    n_t = (a1 + b1), a2 + b2)
+    n_t = (a1 + b1, a2 + b2)
     return (n_t)
