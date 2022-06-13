@@ -23,6 +23,44 @@ void reverse(listint_t **h_r)
 	}
 	*h_r = previous;
 }
+
+/**
+ * compare - compares each int of the list
+ *
+ * @h1: head of the first half
+ * @h2: head of the second half
+ * Return: 1 if are equals, 0 if not
+ */
+
+int compare(listint_t *h1, listint_t *h2)
+{
+	listint_t *t1;
+	listint_t *t2;
+
+	t1 = h1;
+	t2 = h2;
+
+	while (t1 != NULL && t2 != NULL)
+	{
+		if (t1->n == t2->n)
+		{
+			t1 = t1->next;
+			t2 = t2->next;
+		}
+		else
+		{
+			return (0);
+		}
+	}
+
+	if (t1 == NULL && t2 == NULL)
+	{
+		return (1);
+	}
+
+	return (0);
+}
+
 /**
  * is_palindrome - checks if a singly linked list
  * is a palindrome
