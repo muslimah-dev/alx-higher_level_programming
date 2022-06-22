@@ -4,11 +4,8 @@
 
 class Square:
     """class Square with a private variable "size"."""
-    
-
     def __init__(self, size):
         """Initializes a square.
-
 
         Args:
             size(int): size of Square
