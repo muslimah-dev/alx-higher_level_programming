@@ -59,10 +59,19 @@ class Rectangle:
             return (0)
         return (2 * self.__width + 2 * self.__height)
 
+
+    def __str__(self):
+        """String rep of rectangle class.
+        prints a rectangle in form of hashtags
+        to stdout.
+        """
+        if self.__width == 0 or self.__height == 0:
+            return ("")
         rectangle = []
-        for i in range(self.__height):
-            for x in range(self.__width):
+        for x in range(self.__height):
+            for y in range(self.__width):
                 rectangle.append("#")
-            if i != self.__height - 1:
+            until_last = self.__height - 1
+            if x != until_last:
                 rectangle.append("\n")
         return("".join(rectangle))
