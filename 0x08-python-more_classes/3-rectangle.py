@@ -59,7 +59,6 @@ class Rectangle:
             return (0)
         return (2 * self.__width + 2 * self.__height)
 
-
     def __str__(self):
         """String rep of rectangle class.
         prints a rectangle in form of hashtags
