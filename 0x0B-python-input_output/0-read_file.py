@@ -7,4 +7,4 @@ def read_file(filename=""):
     with open(filename) as f:
         """loop through via file handler"""
         for line in f:
-            print(line)
+            print(line, end='')
