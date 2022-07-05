@@ -1,8 +1,12 @@
 #!/usr/bin/python3
-"""function that returns an object (Python data structure) represented by a JSON string"""
+"""function that returns an object (Python d
+ata
+structure) represented by a JSON string"""
 
 
 import json
+
+
 def from_json_string(my_str):
     """
     Returns: object rep by a JSON string
